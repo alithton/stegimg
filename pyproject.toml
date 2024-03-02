@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stegimg"
+version = "0.0.1"
+dependencies = [
+    "pillow>9.0.0"
+]
+authors = [
+  { name="alithon", email="alithton@proton.me" },
+]
+description = "Uses steganography to hide messages in images"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning"
+]
+
+[project.urls]
+Homepage = "https://github.com/alithton/stegimg"
+Issues = "https://github.com/alithton/stegimg/issues"
