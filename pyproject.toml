@@ -4,7 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "stegimg"
-version = "0.0.1"
+dynamic = [
+    "version"
+]
 dependencies = [
     "pillow>9.0.0"
 ]
@@ -24,3 +26,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/alithton/stegimg"
 Issues = "https://github.com/alithton/stegimg/issues"
+
+[tool.hatch.version]
+path = "src/stegimg/__about__.py"
